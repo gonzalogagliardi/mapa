@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+     
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+     <!-- jquery -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+     <!-- Leaflet-->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css" integrity="sha384-kxXhFDZB0L84bBV/apPOb8zGC+fsQ1dBPpKXPUXc1zRymi4BaueVyC27iDDPdssp" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.0/dist/leaflet.js" integrity="sha384-JZO8CJyT9g8yj13j0R/ssKw7jx+QYlck09EBe8l/UxI6bE8JDmTF/VbHAIQYXDTD" crossorigin=""></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Mapa</h1>
+    
+   
+
+    <div class="container">
+        <div class="myform">
+            <form action="">
+                <div>
+                    <p>Tipo de Inmueble</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Precio</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Direccion</p>
+                    <input type="text" id="id_address">
+                </div>
+                <div>
+                    <p>Latitud</p>
+                    <input type="text" id="id_latitud">
+                </div>
+                <div>
+                    <p>Longitud</p>
+                    <input type="text" id="id_longitud">
+                </div>
+                <div>
+                    <br>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="houseAddress">
+            <div>
+                <input type="text" id="address" placeholder="Buscar">
+            </div>
+            <div>
+                <br>
+                <button onclick="findAddresses()" >Buscar</button>
+            </div>
+            <div id="addresses"></div>
+            <div id="mapid" class="map"></div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
